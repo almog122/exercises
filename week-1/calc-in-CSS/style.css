@@ -1,0 +1,30 @@
+#container1{
+    width: 100%;
+    font-size:0px;
+}
+#div1 {
+    height: 100px;
+    width: calc(100% - 30px);
+    background-color: pink;
+    display: inline-block;
+
+}
+#div2{
+    height: 100px;
+    width: 20px;
+    background-color: red;
+    display: inline-block;
+
+}
+
+#container2{
+    width: calc(100% * 0.4);
+    font-size:0px;
+}
+.evenWid{
+    height: 50px;
+    width: calc((100% * 0.6) / 3);
+    background-color: pink;
+    border: black 1px solid;
+    display: inline-block;
+}

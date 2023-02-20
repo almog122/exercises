@@ -1,0 +1,90 @@
+#page-container{
+    grid-template-areas: 
+    "h h h h"
+    "m m m m"
+    "m m m m"
+    "m m m m"
+    "b b b b";
+    height: 100vh;
+    display: grid;
+    border: black solid;
+}
+
+#header-container{
+    grid-area: h;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #2c3e50;
+    align-content: center;
+    padding-left: 50px;
+    border: black solid;
+}
+
+#main-container{
+    grid-template-areas: 
+    "a tc th"
+    "a tc jc";
+    grid-area: m;
+    display: grid;
+    grid-gap: 10px;
+    background-color: purple;
+    align-items: center;
+    padding: 100px;
+    border: 50px;
+    border: black solid;
+}
+
+.abcd{
+
+    grid-area: a;
+    background-color: green;
+    justify-self: center;
+    
+}
+
+.abcd-text{
+    border: black solid;
+    padding: 10px;
+    justify-self: center;
+}
+
+.text-coulumn{
+    grid-area: tc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #d35400;
+    
+}
+
+.text-header{
+    grid-area: th;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-self: center;
+    background-color: #d35400;
+    
+}
+
+.just-text{
+    grid-area: jc;
+    display: grid;
+    justify-self: center;
+    background-color: #d35400;
+    
+
+}
+
+.text{
+    border: black solid;
+    padding: 10px;
+}
+
+#base-container{
+    grid-area: b;
+    display: grid;
+    align-content: center;
+    justify-self: end;
+    
+    
+}

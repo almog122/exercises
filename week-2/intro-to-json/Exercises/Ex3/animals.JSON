@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Cattle",
+    "weightKiloAvrg": 600,
+    "habitats": [
+      "Europe",
+      "Asia",
+      "America",
+      "Australia",
+      "India",
+      "Australia",
+      "Africa"
+    ],
+    "endangered": false,
+    "eatFoods": ["grass", "wheat"],
+    "eatAnimals": [{}]
+  },
+  {
+    "name": "Elephant",
+    "weightKiloAvrg": 5200,
+    "habitats": ["sub-Saharan Africa", "South Asia", "Southeast Asia"],
+    "endangered": true,
+    "eatFoods": ["leaves", "twigs", "fruit", "bark", "grass", "roots"],
+    "eatAnimals": [{}]
+  },
+  {
+    "name": "Gray Wolf",
+    "weightKiloAvrg": 69,
+    "habitats": ["Eurasia:", "North America"],
+    "endangered": false,
+    "eatFoods": ["garbage", "livestocks"],
+    "eatAnimals": [
+      {
+        "name": "rodents",
+        "tasty": 4
+      },
+      {
+        "name": "rabbits",
+        "tasty": 4
+      }
+    ]
+  }
+]

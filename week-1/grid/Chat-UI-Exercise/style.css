@@ -1,0 +1,96 @@
+#page-container{
+    grid-template-areas: 
+    "f c c c"
+    "f c c c"
+    "f c c c"
+    "f c c c"
+    "f c c c"
+    "f c c c"
+    "f c c c"
+    "f tm tm tm";
+    height: 100vh;
+    display: grid;
+}
+
+#friends-container{
+    grid-area: f;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: purple;
+}
+
+.friends-list{
+    background-color: plum;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.friends-list-header{
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+}
+
+#chat-container{
+    grid-area: c;
+    display: grid;
+    grid-gap: 10px;
+    background-color: lightgray;
+    grid-template-rows: repeat(5, 1fr); 
+    
+    
+}
+
+.sender{
+
+    background-color: grey;
+    align-self: start;
+    justify-self: start;
+    padding: 10px;
+    margin: 10px;
+}
+
+.receiver{
+
+    background-color: lightgreen;
+    align-self: start;
+    justify-self: end;
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+.text{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    font-family: cursive;
+}
+
+.timestamp{
+    font-size: 10px
+}
+
+#send-container{
+
+    grid-area: tm;
+    display: grid;
+    grid-template-areas: 
+    "mt mt mt sb";
+}
+
+#message-text{
+
+    grid-area: mt;
+    
+}
+
+#send-button{
+
+    grid-area: sb;
+    background-color: purple;
+    
+}
