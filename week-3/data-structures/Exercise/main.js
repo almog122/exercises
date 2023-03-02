@@ -5,22 +5,15 @@ class UniqueArray {
   }
 
   exists(item) {
-    const arrayString = JSON.stringify(this.uniqueArray);
+
     const itemString = JSON.stringify(item);
 
-    if (arrayString.includes(itemString)) {
-      return true;
-    }
-
-    return false;
+    return this.uniqueArray.some( item => JSON.stringify(item) == itemString);
   }
 
   add(item) {
 
-    const arrayString = JSON.stringify(this.uniqueArray);
-    const itemString = JSON.stringify(item);
-
-    if(arrayString.includes(itemString)) {
+    if(this.exists(item)) {
       return;
     }
     this.uniqueArray[this.uniqueArrayLength++] = item;
@@ -50,5 +43,3 @@ console.log(uniqueStuff.exists("toy")); //returns true
 uniqueStuff.add("poster");
 uniqueStuff.add("hydrogen");
 console.log(uniqueStuff.get(2)); //prints "hydrogen"
-
-console.log("{x:10, y:20}".includes("10"));
