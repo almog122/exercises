@@ -1,0 +1,10 @@
+db.firstCollection.aggregate([
+    { $match: { "currentCompany.name": "Apple" } },
+    { 
+     $group: 
+     {   
+        _id: "$currentCompany.industry", 
+        count: { $sum: 1 } 
+     } 
+    }
+])

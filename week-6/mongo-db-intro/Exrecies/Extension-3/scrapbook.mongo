@@ -1,0 +1,20 @@
+db.firstCollection.aggregate([
+    { $match: 
+        {$and: [
+            { $or: [
+                { "currentCompany.name": "Google" },
+                { "currentCompany.name": "Apple" }] 
+            },
+
+            { "currentCompany.industry": "Tech" }]
+        }
+    },
+    { 
+     $group: 
+     {   
+        _id: "$lastName", 
+        average: { $avg: "$salary" },
+     }
+    },
+    {$sort: { average : -1 }}
+])

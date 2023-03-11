@@ -1,0 +1,11 @@
+// delete the entire document that matche:
+db.firstCollection.remove({
+    name: "Rayna"
+})
+// delete only the first collection that matche:
+db.firstCollection.remove(  
+    {
+        name: "Rayna"
+    }, 
+    true
+)

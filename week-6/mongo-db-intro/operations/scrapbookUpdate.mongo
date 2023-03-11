@@ -1,0 +1,21 @@
+// overwrite the entire document:
+db.firstCollection.update(
+    {
+        name: "Milo"        //filter
+    },
+    {
+        lastName: "Shakers" //update
+    }
+)
+// adding (or updating an existing field) without overwriting:
+db.firstCollection.update(
+    {
+        name: "Milo"
+    },
+    {
+        $set:
+            {
+                lastName: "Shakers"
+            }
+    }
+)

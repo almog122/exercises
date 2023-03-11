@@ -1,0 +1,1 @@
+db.firstCollection.find({}).sort({ salary: -1 }).limit(3);

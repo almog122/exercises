@@ -1,0 +1,23 @@
+db.firstCollection.find({})
+
+db.firstCollection.insert({
+    name: "Razu",
+    hometown: {
+        city: "Razuville",
+        country: "Razuland"
+    },
+    hobbies: ["Razu-ing", "Razu Surfing", "Razu Cooking"]
+})
+
+db.firstCollection.insert({
+    _id: 99143,
+    name: "Shoobert"
+})
+
+db.firstCollection.insert({
+    currentBalance: 4200,
+    accountDetails:{
+        fullname: "Douglas Adams",
+        accountNumber: 800112338
+    }
+})

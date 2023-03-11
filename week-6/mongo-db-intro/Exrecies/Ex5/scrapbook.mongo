@@ -1,0 +1,6 @@
+db.firstCollection.count({
+  $or: [
+    { "currentCompany.name": "Apple"  },
+    { "previousCompanies.name": "Apple" }
+  ],
+});

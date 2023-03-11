@@ -1,0 +1,18 @@
+db.firstCollection
+  .find(
+    {
+      $or: [
+        { currentPosition: { $regex: "Sales" } },
+        { currentPosition: { $regex: "Retail" } }
+        ]
+    },
+    {
+      "currentCompany.name": 1,
+      firstName: 1,
+      lastName: 1,
+      salary: 1,
+      _id: 0,
+    }
+  )
+  .sort({ salary: -1 })
+  .limit(1);

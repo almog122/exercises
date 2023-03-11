@@ -1,0 +1,11 @@
+db.firstCollection.find({
+    salary:{
+        $gt: 25000
+    }
+})
+
+db.firstCollection.count({
+    salary:{
+        $gt: 25000
+    }
+})

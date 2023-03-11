@@ -1,0 +1,7 @@
+
+db.firstCollection.update(  
+    {name: "Razu"}, 
+    {$push: {
+        hobbies: "Razu-Ball"
+    }}
+)

@@ -1,0 +1,12 @@
+db.firstCollection.update(  
+    {name: "Soren"}, 
+    {$pull: {
+        dreams: "Being like Razu"
+    }}
+)
+db.firstCollection.update(  
+    {name: "Soren"}, 
+    {$pop: {
+        dreams: 1
+    }}
+)
